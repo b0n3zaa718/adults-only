@@ -3,169 +3,203 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AdultsOnly.cc — The Hub</title>
-  <meta name="description" content="AdultsOnly.cc Hub — community, dating, and AI companion (coming soon)." />
+  <title>AdultsOnly.cc</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <!-- Background effects -->
-  <div class="bg">
-    <div class="stars"></div>
-    <div class="lava"></div>
-    <div class="vignette"></div>
-  </div>
 
+<body>
   <!-- Top Nav -->
   <header class="topbar">
-    <div class="logoWrap">
-      <img class="logo" src="logo.png" alt="AdultsOnly logo" />
+    <div class="brand">
+      <img class="brandLogo" src="logo.png" alt="AdultsOnly.cc" />
+      <div class="brandText">AdultsOnly.cc</div>
     </div>
 
     <nav class="nav">
-      <a href="#home" class="navLink">Home</a>
-      <a href="#community" class="navLink">Community</a>
-      <a href="#dating" class="navLink">Dating App</a>
-      <a href="#ai" class="navLink">AI Companion</a>
-      <a href="#vip" class="navLink">VIP</a>
-      <a href="#support" class="navLink">Support</a>
+      <a class="navLink active" href="#home">Home</a>
+      <a class="navLink" href="#community">Community</a>
+      <a class="navLink" href="#dating">Dating</a>
+      <a class="navLink" href="#ai">AI Companion</a>
+      <a class="navLink" href="#vip">VIP</a>
+      <a class="navLink" href="#support">Support</a>
     </nav>
 
-    <a class="btn btn-join" href="#join">Join Now</a>
+    <a class="btn btnTop" href="#join">Join Now</a>
   </header>
 
-  <main class="wrap" id="home">
-    <!-- Hero -->
+  <!-- HERO -->
+  <main id="home" class="page">
     <section class="hero">
-      <h1 class="heroTitle">Connect, Chat, Explore Your AI Companion</h1>
+      <!-- background image layer -->
+      <div class="heroBg" aria-hidden="true"></div>
+      <div class="heroGlow" aria-hidden="true"></div>
 
-      <div class="heroActions">
-        <a class="btn btn-action" href="#community">Join the Community</a>
-        <a class="btn btn-action" href="#dating">Find Your Match</a>
-        <a class="btn btn-action" href="#ai">Chat with AI</a>
+      <div class="heroInner">
+        <h1 class="heroTitle">Experience the Ultimate<br/>Premier Adult Universe.</h1>
+
+        <p class="heroSub">
+          Exclusive Community, Interactive Adult Dating, and Elite AI Experiences.
+        </p>
+
+        <a class="btn btnHero" href="#join">Verify Age &amp; Join Now <span class="arrow">›</span></a>
       </div>
     </section>
 
-    <!-- Dashboard -->
-    <section class="dash">
-      <h2 class="dashTitle">Hub Dashboard</h2>
-
+    <!-- FEATURE CARDS (middle) -->
+    <section class="section" aria-label="Feature cards">
       <div class="cards3">
-        <!-- Card 1 -->
+
+        <!-- FACEBOOK / COMMUNITY -->
         <article class="card" id="community">
-          <div class="cardHead">
-            <div class="cardIcon">f</div>
-            <div class="cardName">Facebook Group</div>
-            <div class="cardDots">•••</div>
+          <div class="cardTop">
+            <div class="cardTopLeft">
+              <span class="icon fb">f</span>
+              <span class="cardTitle">Facebook Community</span>
+            </div>
+            <span class="dots">•••</span>
           </div>
 
+          <div class="cardMedia mediaCommunity"></div>
+
           <div class="cardBody">
-            <div class="miniTitle">Latest Posts:</div>
+            <div class="cardLabel">Community Forum</div>
+            <ul class="miniList">
+              <li>25 new posts</li>
+              <li>Members online: <b>182</b></li>
+              <li class="muted">Exclusive content requires membership</li>
+            </ul>
 
-            <div class="post">
-              <div class="avatar"></div>
-              <div class="postText">
-                <div class="postTop"><b>Sarah</b> <span class="muted">· 1 hour ago</span></div>
-                <div class="postMsg">Great meetup tonight! Had so much fun!</div>
-              </div>
-            </div>
-
-            <div class="post">
-              <div class="avatar"></div>
-              <div class="postText">
-                <div class="postTop"><b>Jessica</b> <span class="muted">· 2 hours ago</span></div>
-                <div class="postMsg">Excited for the weekend event!</div>
-              </div>
-            </div>
-
-            <a class="btn btn-card" href="#join">Go to Group</a>
+            <a class="btn btnCard" href="#join">Join for Free <span class="arrow">›</span></a>
           </div>
         </article>
 
-        <!-- Card 2 -->
+        <!-- DATING -->
         <article class="card" id="dating">
-          <div class="cardHead">
-            <div class="cardIcon heart">♥</div>
-            <div class="cardName">Dating App</div>
-            <div class="cardDots">•••</div>
+          <div class="cardTop">
+            <div class="cardTopLeft">
+              <span class="icon heart">♥</span>
+              <span class="cardTitle">Adult Dating</span>
+            </div>
+            <span class="dots">•••</span>
           </div>
 
+          <div class="cardMedia mediaDating"></div>
+
           <div class="cardBody">
-            <div class="miniTitle">New Matches:</div>
+            <div class="cardLabel">Cyber-Connections Dating</div>
+            <ul class="miniList">
+              <li>Private community access</li>
+              <li>Interactive matching (coming soon)</li>
+              <li class="muted">Demo UI only — no real profiles yet</li>
+            </ul>
 
-            <div class="matches">
-              <div class="match"></div>
-              <div class="match"></div>
-              <div class="match"></div>
-            </div>
-
-            <a class="btn btn-card" href="#join">Go to Matches</a>
-            <div class="note muted">* Coming soon — demo UI only.</div>
+            <a class="btn btnCard" href="#join">Enter the Fun <span class="arrow">›</span></a>
           </div>
         </article>
 
-        <!-- Card 3 -->
+        <!-- AI -->
         <article class="card" id="ai">
-          <div class="cardHead">
-            <div class="cardIcon ai">☺</div>
-            <div class="cardName">Your AI Companion</div>
-            <div class="cardDots">•••</div>
+          <div class="cardTop">
+            <div class="cardTopLeft">
+              <span class="icon ai">☺</span>
+              <span class="cardTitle">AI Companion</span>
+            </div>
+            <span class="dots">•••</span>
           </div>
 
+          <div class="cardMedia mediaAI"></div>
+
           <div class="cardBody">
-            <div class="aiBox">
-              <div class="aiHello">Hi Alex!</div>
-              <div class="muted">How can I assist you today?</div>
-            </div>
+            <div class="aiHello">Hi Alex!</div>
+            <div class="muted small">Unleash the Ultimate Fantasy AI Experience</div>
 
             <div class="stack">
-              <a class="btn btn-card" href="#join">Chat Now</a>
-              <a class="btn btn-card" href="#join">AI Games</a>
-              <a class="btn btn-card" href="#join">Ask Me Anything</a>
+              <a class="btn btnCard" href="#join">Chat with Your AI</a>
+              <a class="btn btnCard" href="#join">Chat with Your AI <span class="arrow">›</span></a>
             </div>
-
-            <div class="note muted">* Coming soon — demo UI only.</div>
           </div>
         </article>
+
       </div>
     </section>
 
-    <!-- Lower Row -->
-    <section class="lower">
-      <div class="wideCard" id="vip">
-        <div class="wideHead">
+    <!-- PRICING -->
+    <section class="section" id="vip">
+      <h2 class="sectionTitle">Pricing Plans</h2>
+
+      <div class="pricing3">
+        <div class="priceCard">
+          <div class="priceHead">Free</div>
+          <div class="priceBody">
+            <div class="priceLine">Community access</div>
+            <div class="priceLine">Limited previews</div>
+            <div class="priceLine muted">Upgrades later</div>
+          </div>
+          <a class="btn btnPrice" href="#join">Join for Free <span class="arrow">›</span></a>
+        </div>
+
+        <div class="priceCard featured">
+          <div class="priceHead">Monthly</div>
+          <div class="priceBig">$5.99</div>
+          <div class="muted small center">per month</div>
+          <div class="priceBody">
+            <div class="priceLine">Best value starter</div>
+            <div class="priceLine">Early access perks</div>
+            <div class="priceLine muted">Features roll out gradually</div>
+          </div>
+          <a class="btn btnPrice" href="#join">Subscribe &amp; Pay <span class="arrow">›</span></a>
+        </div>
+
+        <div class="priceCard">
+          <div class="priceHead">Premium</div>
+          <div class="priceBody">
+            <div class="priceLine">VIP perks</div>
+            <div class="priceLine">Priority access</div>
+            <div class="priceLine muted">Later upgrade</div>
+          </div>
+          <a class="btn btnPrice" href="#join">Subscribe &amp; Pay <span class="arrow">›</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM 2 WIDE CARDS -->
+    <section class="section bottom2" id="support">
+      <div class="wideCard">
+        <div class="wideTop">
           <div class="wideTitle">Activity Feed</div>
-          <div class="wideDots">•••</div>
+          <span class="dots">•••</span>
         </div>
         <div class="wideBody muted">
-          Add your future feed + wallet UI here (tokens, cards, PayPal). For now this is a placeholder.
+          Wallet / tokens / payment modules will go here later. This is a placeholder panel.
         </div>
       </div>
 
-      <div class="wideCard" id="support">
-        <div class="wideHead">
+      <div class="wideCard">
+        <div class="wideTop">
           <div class="wideTitle">Adult-Only and Wild</div>
-          <div class="wideDots">•••</div>
+          <span class="dots">•••</span>
         </div>
         <div class="wideBody">
           <ul class="bullets">
-            <li>18+ only (age verification)</li>
-            <li>Consent-first experiences</li>
+            <li>18+ Only Content</li>
+            <li>Interactive chat + experiences</li>
             <li>Earn and spend tokens (later)</li>
           </ul>
-          <a class="btn btn-join" href="#join">Start Exploring</a>
+          <a class="btn btnTop" href="#join">Start Exploring <span class="arrow">›</span></a>
         </div>
       </div>
     </section>
 
-    <footer class="foot" id="join">
-      <div class="fine">
+    <!-- FOOTER -->
+    <footer class="footer" id="join">
+      <div class="fineprint">
         * You must be 18+ to join. All members must verify age.
       </div>
-      <div class="footRow">
-        <div>© <span id="y"></span> AdultsOnly.cc</div>
-        <div class="footLinks">
-          <a href="#support">Terms</a>
+      <div class="footerRow">
+        <div>© <span id="year"></span> AdultsOnly.cc</div>
+        <div class="footerLinks">
           <a href="#support">Privacy</a>
+          <a href="#support">Terms</a>
           <a href="#support">Contact</a>
         </div>
       </div>
@@ -173,7 +207,7 @@
   </main>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
