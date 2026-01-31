@@ -1,174 +1,179 @@
-            <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AdultsOnly.cc — The Hub</title>
-  <meta name="description" content="The Hub — where grown connections feel intentional. Privacy, consent, and verified vibes." />
+  <meta name="description" content="AdultsOnly.cc Hub — community, dating, and AI companion (coming soon)." />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <!-- Background effects -->
+  <div class="bg">
+    <div class="stars"></div>
+    <div class="lava"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <!-- Top Nav -->
   <header class="topbar">
-    <div class="brand">
-      <div class="brand-mark" aria-hidden="true"></div>
-      <div class="brand-name">AdultsOnly.cc</div>
+    <div class="logoWrap">
+      <img class="logo" src="logo.png" alt="AdultsOnly logo" />
     </div>
 
     <nav class="nav">
-      <a href="#how" class="nav-link">How it works</a>
-      <a href="#experiences" class="nav-link">Experiences</a>
-      <a href="#safety" class="nav-link">Safety</a>
-      <a href="#join" class="nav-link">Join</a>
+      <a href="#home" class="navLink">Home</a>
+      <a href="#community" class="navLink">Community</a>
+      <a href="#dating" class="navLink">Dating App</a>
+      <a href="#ai" class="navLink">AI Companion</a>
+      <a href="#vip" class="navLink">VIP</a>
+      <a href="#support" class="navLink">Support</a>
     </nav>
 
-    <div class="nav-actions">
-      <a class="btn btn-ghost" href="#signin">Sign in</a>
-    </div>
+    <a class="btn btn-join" href="#join">Join Now</a>
   </header>
 
-  <main class="wrap">
+  <main class="wrap" id="home">
+    <!-- Hero -->
     <section class="hero">
-      <div class="hero-left">
-        <div class="kicker">The Hub</div>
+      <h1 class="heroTitle">Connect, Chat, Explore Your AI Companion</h1>
 
-        <h1 class="headline">
-          Welcome to The<br />
-          Hub — where grown<br />
-          connections feel<br />
-          intentional.
-        </h1>
-
-        <p class="subhead">
-          Curated profiles, real-time availability, and private messaging for adults who know what they want.
-          Build connections with clarity, comfort, and respect.
-        </p>
-
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#request">Create your profile</a>
-          <a class="btn btn-secondary" href="#preview">Explore member previews</a>
-        </div>
-
-        <div class="stats">
-          <div class="stat"><span class="stat-big">18+</span><span class="stat-label">Adults only</span></div>
-          <div class="stat"><span class="stat-big">24/7</span><span class="stat-label">Community</span></div>
-          <div class="stat"><span class="stat-big">100%</span><span class="stat-label">Consent-first</span></div>
-        </div>
+      <div class="heroActions">
+        <a class="btn btn-action" href="#community">Join the Community</a>
+        <a class="btn btn-action" href="#dating">Find Your Match</a>
+        <a class="btn btn-action" href="#ai">Chat with AI</a>
       </div>
+    </section>
 
-      <aside class="hero-card" id="request" aria-label="Request access">
-        <div class="card-top">
-          <div class="card-title">Tonight’s vibe</div>
-          <div class="card-chip">Open to meet</div>
-        </div>
+    <!-- Dashboard -->
+    <section class="dash">
+      <h2 class="dashTitle">Hub Dashboard</h2>
 
-        <div class="card-body">
-          <div class="feature">
-            <div class="feature-title">Private lounges</div>
-            <div class="feature-desc">Plan with people who match your pace, boundaries, and comfort.</div>
+      <div class="cards3">
+        <!-- Card 1 -->
+        <article class="card" id="community">
+          <div class="cardHead">
+            <div class="cardIcon">f</div>
+            <div class="cardName">Facebook Group</div>
+            <div class="cardDots">•••</div>
           </div>
 
-          <div class="feature">
-            <div class="feature-title">Verified profiles</div>
-            <div class="feature-desc">Every member completes ID, selfie, and profile verification.</div>
+          <div class="cardBody">
+            <div class="miniTitle">Latest Posts:</div>
+
+            <div class="post">
+              <div class="avatar"></div>
+              <div class="postText">
+                <div class="postTop"><b>Sarah</b> <span class="muted">· 1 hour ago</span></div>
+                <div class="postMsg">Great meetup tonight! Had so much fun!</div>
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="avatar"></div>
+              <div class="postText">
+                <div class="postTop"><b>Jessica</b> <span class="muted">· 2 hours ago</span></div>
+                <div class="postMsg">Excited for the weekend event!</div>
+              </div>
+            </div>
+
+            <a class="btn btn-card" href="#join">Go to Group</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" id="dating">
+          <div class="cardHead">
+            <div class="cardIcon heart">♥</div>
+            <div class="cardName">Dating App</div>
+            <div class="cardDots">•••</div>
           </div>
 
-          <div class="feature">
-            <div class="feature-title">Consent tools</div>
-            <div class="feature-desc">Set expectations and agreements before you ever meet.</div>
+          <div class="cardBody">
+            <div class="miniTitle">New Matches:</div>
+
+            <div class="matches">
+              <div class="match"></div>
+              <div class="match"></div>
+              <div class="match"></div>
+            </div>
+
+            <a class="btn btn-card" href="#join">Go to Matches</a>
+            <div class="note muted">* Coming soon — demo UI only.</div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" id="ai">
+          <div class="cardHead">
+            <div class="cardIcon ai">☺</div>
+            <div class="cardName">Your AI Companion</div>
+            <div class="cardDots">•••</div>
           </div>
 
-          <a class="btn btn-primary btn-wide" href="#join">Request access</a>
+          <div class="cardBody">
+            <div class="aiBox">
+              <div class="aiHello">Hi Alex!</div>
+              <div class="muted">How can I assist you today?</div>
+            </div>
 
-          <p class="fineprint">
-            * Landing page only for now. Dating + AI Companion are in development.
-          </p>
-        </div>
-      </aside>
+            <div class="stack">
+              <a class="btn btn-card" href="#join">Chat Now</a>
+              <a class="btn btn-card" href="#join">AI Games</a>
+              <a class="btn btn-card" href="#join">Ask Me Anything</a>
+            </div>
+
+            <div class="note muted">* Coming soon — demo UI only.</div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section class="section" id="how">
-      <h2 class="section-title">How it works</h2>
-      <div class="grid3">
-        <div class="panel">
-          <h3>Join the community</h3>
-          <p>Start free with community groups while premium features roll out.</p>
+    <!-- Lower Row -->
+    <section class="lower">
+      <div class="wideCard" id="vip">
+        <div class="wideHead">
+          <div class="wideTitle">Activity Feed</div>
+          <div class="wideDots">•••</div>
         </div>
-        <div class="panel">
-          <h3>Verify & set boundaries</h3>
-          <p>Identity checks + consent-first tools help keep connections respectful.</p>
+        <div class="wideBody muted">
+          Add your future feed + wallet UI here (tokens, cards, PayPal). For now this is a placeholder.
         </div>
-        <div class="panel">
-          <h3>Match by vibe</h3>
-          <p>Preferences, availability, and comfort level guide better meetups.</p>
+      </div>
+
+      <div class="wideCard" id="support">
+        <div class="wideHead">
+          <div class="wideTitle">Adult-Only and Wild</div>
+          <div class="wideDots">•••</div>
+        </div>
+        <div class="wideBody">
+          <ul class="bullets">
+            <li>18+ only (age verification)</li>
+            <li>Consent-first experiences</li>
+            <li>Earn and spend tokens (later)</li>
+          </ul>
+          <a class="btn btn-join" href="#join">Start Exploring</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="experiences">
-      <h2 class="section-title">Experiences</h2>
-      <div class="grid2">
-        <div class="panel">
-          <h3>Dating (Coming soon)</h3>
-          <p>Profiles, matching, and private messaging will be added after the landing flow is finalized.</p>
-          <div class="tag">In development</div>
-        </div>
-        <div class="panel">
-          <h3>AI Companion (Coming soon)</h3>
-          <p>A guided companion experience designed around privacy, consent, and user control.</p>
-          <div class="tag">In development</div>
-        </div>
+    <footer class="foot" id="join">
+      <div class="fine">
+        * You must be 18+ to join. All members must verify age.
       </div>
-    </section>
-
-    <section class="section" id="safety">
-      <h2 class="section-title">Safety</h2>
-      <div class="grid3">
-        <div class="panel">
-          <h3>Privacy-first</h3>
-          <p>Minimal public exposure. You control what’s shown and to whom.</p>
+      <div class="footRow">
+        <div>© <span id="y"></span> AdultsOnly.cc</div>
+        <div class="footLinks">
+          <a href="#support">Terms</a>
+          <a href="#support">Privacy</a>
+          <a href="#support">Contact</a>
         </div>
-        <div class="panel">
-          <h3>Consent by design</h3>
-          <p>Clear expectations before anything moves forward.</p>
-        </div>
-        <div class="panel">
-          <h3>Verification</h3>
-          <p>Reduce fake accounts with ID + selfie checks (when enabled).</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="join">
-      <h2 class="section-title">Request access</h2>
-      <div class="panel join">
-        <p>
-          For now, this can go to email or a form. Later we’ll replace it with the real signup inside the app.
-        </p>
-
-        <div class="cta-row">
-          <a class="btn btn-primary" href="mailto:request@adultsonly.cc?subject=AdultsOnly%20Access%20Request&body=Name%3A%0AWhat%20are%20you%20looking%20for%3A%0A">Request access (email)</a>
-          <a class="btn btn-secondary" href="#how">See how it works</a>
-        </div>
-
-        <p class="fineprint">
-          Tip: swap the email link for your Google Form link anytime.
-        </p>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div>© <span id="year"></span> AdultsOnly.cc</div>
-      <div class="footer-links">
-        <a href="#how">How it works</a>
-        <a href="#safety">Safety</a>
-        <a href="#join">Request access</a>
       </div>
     </footer>
   </main>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("y").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
