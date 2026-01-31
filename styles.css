@@ -33,6 +33,26 @@ body{
 a{ color:inherit; text-decoration:none; }
 
 .topbar{
+  /* existing stuff stays */
+}
+
+.topbar .brand{
+  margin-right:auto; /* default = left */
+}
+
+/* If you want logo/text on the right instead, use this: */
+.topbar{
+  justify-content: space-between;
+}
+.brand{
+  order: 3;          /* move to right */
+}
+.nav{
+  order: 2;
+}
+.nav-actions{
+  order: 1;          /* move sign-in to left */
+}
   position:sticky;
   top:0;
   z-index:10;
