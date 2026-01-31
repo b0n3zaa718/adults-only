@@ -1,222 +1,174 @@
-<!DOCTYPE html>
+            <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AdultsOnly.cc — The Hub</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fontas.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <div class="logo">The Hub</div>
-        <nav class="nav-links">
-          <a href="#how-it-works">How it works</a>
-          <a href="#experiences">Experiences</a>
-          <a href="#safety">Safety</a>
-          <a href="#join">Join</a>
-        </nav>
-        <button class="ghost-button">Sign in</button>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AdultsOnly.cc — The Hub</title>
+  <meta name="description" content="The Hub — where grown connections feel intentional. Privacy, consent, and verified vibes." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true"></div>
+      <div class="brand-name">AdultsOnly.cc</div>
+    </div>
+
+    <nav class="nav">
+      <a href="#how" class="nav-link">How it works</a>
+      <a href="#experiences" class="nav-link">Experiences</a>
+      <a href="#safety" class="nav-link">Safety</a>
+      <a href="#join" class="nav-link">Join</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="#signin">Sign in</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="kicker">The Hub</div>
+
+        <h1 class="headline">
+          Welcome to The<br />
+          Hub — where grown<br />
+          connections feel<br />
+          intentional.
+        </h1>
+
+        <p class="subhead">
+          Curated profiles, real-time availability, and private messaging for adults who know what they want.
+          Build connections with clarity, comfort, and respect.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#request">Create your profile</a>
+          <a class="btn btn-secondary" href="#preview">Explore member previews</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><span class="stat-big">18+</span><span class="stat-label">Adults only</span></div>
+          <div class="stat"><span class="stat-big">24/7</span><span class="stat-label">Community</span></div>
+          <div class="stat"><span class="stat-big">100%</span><span class="stat-label">Consent-first</span></div>
+        </div>
       </div>
-    </header>
 
-    <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-text">
-            <p class="eyebrow">Adults-only dating & connection</p>
-            <h1>Welcome to The Hub — where grown connections feel intentional.</h1>
-            <p class="subhead">
-              Curated profiles, real-time availability, and private messaging for adults who
-              know what they want. Build connections with clarity, comfort, and respect.
-            </p>
-            <div class="cta-group">
-              <button class="primary-button">Create your profile</button>
-              <button class="secondary-button">Explore member previews</button>
-            </div>
-            <div class="trust-row">
-              <div>
-                <strong>18+</strong>
-                <span>verified entry</span>
-              </div>
-              <div>
-                <strong>24/7</strong>
-                <span>moderation</span>
-              </div>
-              <div>
-                <strong>100%</strong>
-                <span>consent-first culture</span>
-              </div>
-            </div>
-          </div>
-          <div class="hero-card">
-            <div class="card-header">
-              <span>Tonight's vibe</span>
-              <strong>Open to meet</strong>
-            </div>
-            <ul class="card-list">
-              <li>
-                <h4>Private lounges</h4>
-                <p>Plan with people who match your pace, boundaries, and comfort.</p>
-              </li>
-              <li>
-                <h4>Verified profiles</h4>
-                <p>Every member completes ID, selfie, and profile verification.</p>
-              </li>
-              <li>
-                <h4>Consent tools</h4>
-                <p>Set expectations and agreements before you ever meet.</p>
-              </li>
-            </ul>
-            <button class="primary-button">Request access</button>
-          </div>
+      <aside class="hero-card" id="request" aria-label="Request access">
+        <div class="card-top">
+          <div class="card-title">Tonight’s vibe</div>
+          <div class="card-chip">Open to meet</div>
         </div>
-      </section>
 
-      <section id="how-it-works" class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2>How The Hub works</h2>
-            <p>Simple, transparent, and designed for adults who value their time.</p>
+        <div class="card-body">
+          <div class="feature">
+            <div class="feature-title">Private lounges</div>
+            <div class="feature-desc">Plan with people who match your pace, boundaries, and comfort.</div>
           </div>
-          <div class="card-grid">
-            <article>
-              <h3>Create your private profile</h3>
-              <p>
-                Share what you're looking for, your boundaries, and availability. Decide what's
-                public and what stays hidden.
-              </p>
-            </article>
-            <article>
-              <h3>Match with intention</h3>
-              <p>
-                Smart filters highlight aligned goals, preferred vibes, and schedule overlap so
-                you can connect faster.
-              </p>
-            </article>
-            <article>
-              <h3>Plan safely</h3>
-              <p>
-                Use in-app check-ins, safe call routing, and verified venues to keep control in
-                your hands.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
 
-      <section id="experiences" class="section alt">
-        <div class="container split">
-          <div>
-            <h2>Experiences built for grown adults</h2>
-            <p>
-              From lounge meetups to one-on-one dates, The Hub helps you curate the experience
-              you want without pressure or guesswork.
-            </p>
-            <ul class="checklist">
-              <li>Curated city events with capped attendance</li>
-              <li>Availability status so you know who's open to connect</li>
-              <li>Custom boundaries and consent reminders</li>
-              <li>Opt-in video introductions</li>
-            </ul>
+          <div class="feature">
+            <div class="feature-title">Verified profiles</div>
+            <div class="feature-desc">Every member completes ID, selfie, and profile verification.</div>
           </div>
-          <div class="stats">
-            <div>
-              <h3>4.9★</h3>
-              <p>member satisfaction score</p>
-            </div>
-            <div>
-              <h3>72 hrs</h3>
-              <p>average time to first meetup</p>
-            </div>
-            <div>
-              <h3>80%</h3>
-              <p>matches within shared preferences</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section id="safety" class="section">
-        <div class="container safety">
-          <div>
-            <h2>Safety comes standard</h2>
-            <p>
-              We're serious about protecting members. Every profile is reviewed, and every
-              connection is guided by consent and transparency.
-            </p>
+          <div class="feature">
+            <div class="feature-title">Consent tools</div>
+            <div class="feature-desc">Set expectations and agreements before you ever meet.</div>
           </div>
-          <div class="pill-grid">
-            <div>
-              <h4>Secure verification</h4>
-              <p>Government ID + selfie checks before approval.</p>
-            </div>
-            <div>
-              <h4>Privacy controls</h4>
-              <p>Hide photos, limit visibility, and revoke access anytime.</p>
-            </div>
-            <div>
-              <h4>Support team</h4>
-              <p>24/7 moderation and rapid response for reports.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section id="join" class="section join">
-        <div class="container join-grid">
-          <div>
-            <h2>Ready to join The Hub?</h2>
-            <p>
-              Start with a preview of the community, then unlock full access when you're
-              ready.
-            </p>
-          </div>
-          <form class="join-form">
-            <label>
-              Email
-              <input type="email" placeholder="you@email.com" required />
-            </label>
-            <label>
-              City
-              <input type="text" placeholder="Miami, Atlanta, LA" required />
-            </label>
-            <button class="primary-button" type="submit">Get early access</button>
-            <p class="fine-print">We'll never share your email. Adults 18+ only.</p>
-          </form>
-        </div>
-      </section>
-    </main>
+          <a class="btn btn-primary btn-wide" href="#join">Request access</a>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <h3>The Hub</h3>
-          <p>Adults-only dating with discretion, intention, and respect.</p>
+          <p class="fineprint">
+            * Landing page only for now. Dating + AI Companion are in development.
+          </p>
         </div>
-        <div>
-          <h4>Company</h4>
-          <ul>
-            <li>About</li>
-            <li>Careers</li>
-            <li>Press</li>
-          </ul>
+      </aside>
+    </section>
+
+    <section class="section" id="how">
+      <h2 class="section-title">How it works</h2>
+      <div class="grid3">
+        <div class="panel">
+          <h3>Join the community</h3>
+          <p>Start free with community groups while premium features roll out.</p>
         </div>
-        <div>
-          <h4>Resources</h4>
-          <ul>
-            <li>Safety Center</li>
-            <li>Community Guidelines</li>
-            <li>Support</li>
-          </ul>
+        <div class="panel">
+          <h3>Verify & set boundaries</h3>
+          <p>Identity checks + consent-first tools help keep connections respectful.</p>
         </div>
+        <div class="panel">
+          <h3>Match by vibe</h3>
+          <p>Preferences, availability, and comfort level guide better meetups.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experiences">
+      <h2 class="section-title">Experiences</h2>
+      <div class="grid2">
+        <div class="panel">
+          <h3>Dating (Coming soon)</h3>
+          <p>Profiles, matching, and private messaging will be added after the landing flow is finalized.</p>
+          <div class="tag">In development</div>
+        </div>
+        <div class="panel">
+          <h3>AI Companion (Coming soon)</h3>
+          <p>A guided companion experience designed around privacy, consent, and user control.</p>
+          <div class="tag">In development</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="safety">
+      <h2 class="section-title">Safety</h2>
+      <div class="grid3">
+        <div class="panel">
+          <h3>Privacy-first</h3>
+          <p>Minimal public exposure. You control what’s shown and to whom.</p>
+        </div>
+        <div class="panel">
+          <h3>Consent by design</h3>
+          <p>Clear expectations before anything moves forward.</p>
+        </div>
+        <div class="panel">
+          <h3>Verification</h3>
+          <p>Reduce fake accounts with ID + selfie checks (when enabled).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="join">
+      <h2 class="section-title">Request access</h2>
+      <div class="panel join">
+        <p>
+          For now, this can go to email or a form. Later we’ll replace it with the real signup inside the app.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:request@adultsonly.cc?subject=AdultsOnly%20Access%20Request&body=Name%3A%0AWhat%20are%20you%20looking%20for%3A%0A">Request access (email)</a>
+          <a class="btn btn-secondary" href="#how">See how it works</a>
+        </div>
+
+        <p class="fineprint">
+          Tip: swap the email link for your Google Form link anytime.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> AdultsOnly.cc</div>
+      <div class="footer-links">
+        <a href="#how">How it works</a>
+        <a href="#safety">Safety</a>
+        <a href="#join">Request access</a>
       </div>
     </footer>
-  </body>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
