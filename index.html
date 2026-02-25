@@ -1,168 +1,184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AdultsOnly.cc</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AdultsOnly.cc — Hub</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <!-- Top Nav -->
+  <!-- TOP NAV -->
   <header class="topbar">
     <div class="brand">
-      <img class="brandLogo" src="logo.png" alt="AdultsOnly.cc" />
-      <div class="brandText">AdultsOnly.cc</div>
+      <div class="brand-mark"></div>
+      <div class="brand-text">AdultsOnly<span>.cc</span></div>
     </div>
 
     <nav class="nav">
-      <a class="navLink active" href="#home">Home</a>
-      <a class="navLink" href="#community">Community</a>
-      <a class="navLink" href="#dating">Dating</a>
-      <a class="navLink" href="#ai">AI Companion</a>
-      <a class="navLink" href="#vip">VIP</a>
-      <a class="navLink" href="#support">Support</a>
+      <a class="nav-link active" href="#">Hub</a>
+      <a class="nav-link" href="#">Community</a>
+      <a class="nav-link" href="#">Dating</a>
+      <a class="nav-link" href="#">AI Companion</a>
+      <a class="nav-link" href="#">VIP</a>
+      <a class="nav-link" href="#">Support</a>
     </nav>
 
-    <a class="btn btnTop" href="#join">Join Now</a>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="#">VIP</a>
+      <a class="btn btn-primary" href="#">Join Now</a>
+    </div>
   </header>
 
-  <!-- HERO -->
-  <main id="home" class="page">
+  <!-- PAGE -->
+  <main class="page">
+    <!-- HERO -->
     <section class="hero">
-      <!-- background image layer -->
-      <div class="heroBg" aria-hidden="true"></div>
-      <div class="heroGlow" aria-hidden="true"></div>
-
-      <div class="heroInner">
-        <h1 class="heroTitle">Enter the Velvet Room of<br/>Premier Adult Indulgence.</h1>
-
-        <p class="heroSub">
-          Private access to a luxury community, exclusive adult dating, and sensual AI companionship.
+      <div class="hero-left">
+        <p class="eyebrow">Central Hub • future mobile app</p>
+        <h1 class="h1">
+          One hub for <span class="accent">community</span>, access tiers,<br/>
+          and creator tools — built around privacy.
+        </h1>
+        <p class="sub">
+          No adult content hosted here. We’re building the infrastructure: groups, permissions,
+          onboarding, and future monetization tools — with consent and control.
         </p>
 
-        <a class="btn btnHero" href="#join">Verify Age &amp; Join Now <span class="arrow">›</span></a>
-      </div>
-    </section>
-
-    <!-- FEATURE CARDS (middle) -->
-    <section class="section" aria-label="Feature cards">
-      <div class="cards3">
-
-        <!-- FACEBOOK / COMMUNITY -->
-        <article class="card" id="community">
-          <div class="cardTop">
-            <div class="cardTopLeft">
-              <span class="icon fb">f</span>
-              <span class="cardTitle">Facebook Community</span>
-            </div>
-            <span class="dots">•••</span>
-          </div>
-
-          <div class="cardMedia mediaCommunity"></div>
-
-          <div class="cardBody">
-            <div class="cardLabel">Members Lounge</div>
-            <ul class="miniList">
-              <li>25 new posts</li>
-              <li>Members online: <b>182</b></li>
-              <li class="muted">Exclusive content requires membership</li>
-            </ul>
-
-            <a class="btn btnCard" href="#join">Join for Free <span class="arrow">›</span></a>
-          </div>
-        </article>
-
-        <!-- DATING -->
-        <article class="card" id="dating">
-          <div class="cardTop">
-            <div class="cardTopLeft">
-              <span class="icon heart">♥</span>
-              <span class="cardTitle">Adult Dating</span>
-            </div>
-            <span class="dots">•••</span>
-          </div>
-
-          <div class="cardMedia mediaDating"></div>
-
-          <div class="cardBody">
-            <div class="cardLabel">Private Elite Matches</div>
-            <ul class="miniList">
-              <li>Invitation-only connections</li>
-              <li>Interactive matching (coming soon)</li>
-              <li class="muted">Demo UI only — no real profiles yet</li>
-            </ul>
-
-            <a class="btn btnCard" href="#join">Enter the Fun <span class="arrow">›</span></a>
-          </div>
-        </article>
-
-        <!-- AI -->
-        <article class="card" id="ai">
-          <div class="cardTop">
-            <div class="cardTopLeft">
-              <span class="icon ai">☺</span>
-              <span class="cardTitle">AI Companion</span>
-            </div>
-            <span class="dots">•••</span>
-          </div>
-
-          <div class="cardMedia mediaAI"></div>
-
-          <div class="cardBody">
-            <div class="aiHello">Hi Alex!</div>
-            <div class="muted small">Unleash the Ultimate Fantasy AI Experience</div>
-
-            <div class="stack">
-              <a class="btn btnCard" href="#join">Customize Your AI</a>
-              <a class="btn btnCard" href="#join">Chat with Your AI <span class="arrow">›</span></a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- BOTTOM 2 WIDE CARDS -->
-    <section class="section bottom2" id="support">
-      <div class="wideCard">
-        <div class="wideTop">
-          <div class="wideTitle">Activity Feed</div>
-          <span class="dots">•••</span>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#">Enter Community</a>
+          <a class="btn btn-outline" href="#">Creator / Ambassador Apply</a>
         </div>
-        <div class="wideBody muted">
-          Wallet / tokens / payment modules will go here later. This is a placeholder panel.
+
+        <div class="pill-row">
+          <span class="pill">Free: Community Groups</span>
+          <span class="pill">Tiered Access: Public / Private / VIP</span>
+          <span class="pill">Roadmap: Subscriptions + Premium</span>
         </div>
       </div>
 
-      <div class="wideCard">
-        <div class="wideTop">
-          <div class="wideTitle">Adult-Only and Wild</div>
-          <span class="dots">•••</span>
-        </div>
-        <div class="wideBody">
-          <ul class="bullets">
-            <li>18+ Only Content</li>
-            <li>Interactive chat + experiences</li>
-            <li>Earn and spend tokens (later)</li>
-          </ul>
-          <a class="btn btnTop" href="#join">Start Exploring <span class="arrow">›</span></a>
+      <div class="hero-right">
+        <div class="glass-card">
+          <div class="glass-top">
+            <div class="status-dot"></div>
+            <div class="glass-title">Hub Status</div>
+            <div class="glass-chip">Beta</div>
+          </div>
+
+          <div class="glass-metrics">
+            <div class="metric">
+              <div class="metric-num">3</div>
+              <div class="metric-label">Core Modules</div>
+            </div>
+            <div class="metric">
+              <div class="metric-num">∞</div>
+              <div class="metric-label">Community Groups</div>
+            </div>
+            <div class="metric">
+              <div class="metric-num">24/7</div>
+              <div class="metric-label">Privacy-first</div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="quick">
+            <button class="quick-btn">Create Group</button>
+            <button class="quick-btn">Invite Members</button>
+            <button class="quick-btn">Open VIP</button>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="footer" id="join">
-      <div class="fineprint">
-        * You must be 18+ to join. All members must verify age.
-      </div>
-      <div class="footerRow">
-        <div>© <span id="year"></span> AdultsOnly.cc</div>
-        <div class="footerLinks">
-          <a href="#support">Privacy</a>
-          <a href="#support">Terms</a>
-          <a href="#support">Contact</a>
+    <!-- ACTION CARDS -->
+    <section class="cards">
+      <article class="card">
+        <div class="icon">👥</div>
+        <h3>Community Groups</h3>
+        <p>Free access to curated groups and social hubs across platforms (Facebook, IG, TikTok, etc.).</p>
+        <a class="link" href="#">Explore groups →</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">🔒</div>
+        <h3>Access Levels</h3>
+        <p>Public, private, and VIP tiers designed for consent, boundaries, and creator control.</p>
+        <a class="link" href="#">Learn access →</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">⚡</div>
+        <h3>Creator Tools</h3>
+        <p>Subscriptions, premium access models, and growth tools — phased rollout on the roadmap.</p>
+        <a class="link" href="#">See roadmap →</a>
+      </article>
+    </section>
+
+    <!-- BOTTOM HALF (CREDIT CARD STYLE PANEL + LINKS) -->
+    <section class="bottom">
+      <div class="credit-wrap">
+        <div class="credit-card">
+          <div class="cc-top">
+            <div class="cc-logo">AO</div>
+            <div class="cc-label">VIP Access</div>
+          </div>
+
+          <div class="cc-number">•••• •••• •••• 0420</div>
+          <div class="cc-row">
+            <div class="cc-col">
+              <div class="cc-mini">Member</div>
+              <div class="cc-big">Early Contributor</div>
+            </div>
+            <div class="cc-col">
+              <div class="cc-mini">Tier</div>
+              <div class="cc-big">VIP</div>
+            </div>
+          </div>
+
+          <div class="cc-foot">
+            <span class="cc-note">Access is permission-based</span>
+            <span class="cc-badge">PRIVATE</span>
+          </div>
         </div>
+
+        <div class="credit-actions">
+          <h2 class="h2">Hub Shortcuts</h2>
+          <p class="sub2">Use these to route people safely without sending explicit content.</p>
+
+          <div class="shortcut-grid">
+            <a class="shortcut" href="#">
+              <div class="s-title">Community</div>
+              <div class="s-desc">Open free groups</div>
+            </a>
+            <a class="shortcut" href="#">
+              <div class="s-title">VIP</div>
+              <div class="s-desc">Premium tier info</div>
+            </a>
+            <a class="shortcut" href="#">
+              <div class="s-title">Support</div>
+              <div class="s-desc">Help + FAQ</div>
+            </a>
+            <a class="shortcut" href="https://form.typeform.com/to/xqopUpjG" target="_blank" rel="noopener">
+              <div class="s-title">Apply</div>
+              <div class="s-desc">Join as early contributor</div>
+            </a>
+          </div>
+
+          <div class="safe-note">
+            <strong>Safe note:</strong> This site does not host adult content. It’s a privacy-first hub for groups,
+            access levels, and creator onboarding.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> AdultsOnly.cc</div>
+      <div class="foot-links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
       </div>
     </footer>
   </main>
